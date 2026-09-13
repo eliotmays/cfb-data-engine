@@ -3,7 +3,7 @@ name: Update CFB Red Zone Data
 on:
   schedule:
     - cron: '0 10 * * 0,2'  # Every Sunday & Tuesday at 10:00 AM UTC
-  workflow_dispatch:        # Enables manual 'Run workflow' button in GitHub
+  workflow_dispatch:        # Allows manual run from GitHub UI
 
 jobs:
   build:
@@ -26,9 +26,29 @@ jobs:
         run: |
           python extract_redzone.py
 
+      - name: Check What Files Exist
+        run: |
+          echo "=== Workspace folder contents ==="
+          ls -la
+          echo "=== Data folder contents (if created) ==="
+          ls -la data/ || echo "data folder does not exist yet"
+
       - name: Commit and Push Data Updates
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/redzone_weekly.csv
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated weekly red zone data update" && git push)
+
+          # Check if the CSV was actually created before trying to add it
+          if [ -f "data/redzone_weekly.csv" ]; then
+            git add data/redzone_weekly.csv
+            if git diff --staged --quiet; then
+              echo "File exists, but no new data to commit."
+            else
+              git commit -m "Automated weekly red zone data update"
+              git push
+            fi
+          else
+            echo "CRITICAL: data/redzone_weekly.csv was never created by extract_redzone.py."
+            echo "Check the 'Run Extraction Script' step above for errors."
+            exit 1
+          fi
