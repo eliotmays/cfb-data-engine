@@ -1,19 +1,571 @@
 week,team,player_id,player_name,position,rz_rush_att,rz_targets,match_key,alt_key
-1,Bama,,Austin Mack,RB,1,0,austinmackbamarb,austinmackbama
-1,Bama,,EJ Crowell,RB,1,0,ejcrowellbamarb,ejcrowellbama
-1,Bama,,Khalifa Keith,RB,1,0,khalifakeithbamarb,khalifakeithbama
-1,Bama,,Trae'shawn Brown,RB,1,0,traeshawnbrownbamarb,traeshawnbrownbama
-1,Bama,,Danny Lewis,WR,0,1,dannylewisbamawr,dannylewisbama
-1,Bama,,Rico Scott,WR,0,1,ricoscottbamawr,ricoscottbama
-1,Bama,,Ryan Coleman-Williams,WR,0,2,ryancolemanwilliamsbamawr,ryancolemanwilliamsbama
-1,ECU,,Michael Allen,RB,2,0,michaelallenecurb,michaelallenecu
-1,ECU,,Jeremiah Melvin,WR,0,1,jeremiahmelvinecuwr,jeremiahmelvinecu
-1,FlaSt,,Ousmane Kromah,RB,4,0,ousmanekromahflastrb,ousmanekromahflast
-1,Hawaii,,S. Mikaele,RB,1,0,smikaelehawaiirb,smikaelehawaii
-1,SMU,,Kendrick Raphael,RB,5,0,kendrickraphaelsmurb,kendrickraphaelsmu
-1,SMU,,Dramekco Green,RB,2,0,dramekcogreensmurb,dramekcogreensmu
-1,SMU,,Kevin Jennings,RB,1,0,kevinjenningssmurb,kevinjenningssmu
-1,SMU,,Kendrick Raphael,WR,0,1,kendrickraphaelsmuwr,kendrickraphaelsmu
-1,SMU,,Randy Pittman Jr.,WR,0,1,randypittmansmuwr,randypittmansmu
-2,SoFL,,M. Van Buren Jr.,RB,1,0,mvanburensoflrb,mvanburensofl
-2,UTSA,,B. Young Jr.,WR,0,1,byoungutsawr,byoungutsa
+1,AF,5223119,Owen Allen,RB,2,0,owenallenafrb,owenallenaf
+1,AF,5295015,Luke Rauh,RB,2,0,lukerauhafrb,lukerauhaf
+1,AF,5223117,Owen Chambers,WR,1,0,owenchambersafwr,owenchambersaf
+1,AF,5223131,Rocco Conti,RB,1,0,roccocontiafrb,roccocontiaf
+1,AF,5238868,Liam Szarka,QB,1,0,liamszarkaafqb,liamszarkaaf
+1,AF,5295012,Mason Lowe,WR,1,0,masonloweafwr,masonloweaf
+1,Akr,5198324,Cibastian Broughton,QB,2,0,cibastianbroughtonakrqb,cibastianbroughtonakr
+1,Akr,5084582,Jordan Gant,RB,1,0,jordangantakrrb,jordangantakr
+1,Ariz,4804879,Quincy Craig,RB,1,0,quincycraigarizrb,quincycraigariz
+1,ArkSt,5209965,Tony Carter,DE,3,0,tonycarterarkstde,tonycarterarkst
+1,ArkSt,4888886,Kenyon Clay,RB,1,0,kenyonclayarkstrb,kenyonclayarkst
+1,Army,5150311,Lloyd Benson III,WR,2,0,lloydbensonarmywr,lloydbensonarmy
+1,Army,5293684,Bryson Luter,QB,1,0,brysonluterarmyqb,brysonluterarmy
+1,Aub,4880272,Byrum Brown,QB,2,0,byrumbrownaubqb,byrumbrownaub
+1,Aub,4870642,Jeremiah Cobb,RB,1,0,jeremiahcobbaubrb,jeremiahcobbaub
+1,Aub,4954455,Bryson Washington,RB,1,0,brysonwashingtonaubrb,brysonwashingtonaub
+1,AzSt,5209295,Jake Fette,QB,1,0,jakefetteazstqb,jakefetteazst
+1,AzSt,5216317,Demarius Robinson,RB,1,0,demariusrobinsonazstrb,demariusrobinsonazst
+1,BC,5076122,Evan Dickens,RB,3,0,evandickensbcrb,evandickensbc
+1,BC,5208592,Bo MacCormack III,RB,3,0,bomaccormackbcrb,bomaccormackbc
+1,BGSU,5147347,Austyn Dendy,RB,3,0,austyndendybgsurb,austyndendybgsu
+1,BGSU,5385753,Jay Kastantin,QB,1,0,jaykastantinbgsuqb,jaykastantinbgsu
+1,BYU,4918126,LJ Martin,RB,2,0,ljmartinbyurb,ljmartinbyu
+1,BYU,5245511,Terrance Saryon,WR,1,0,terrancesaryonbyuwr,terrancesaryonbyu
+1,Bama,5078917,Khalifa Keith,RB,1,0,khalifakeithbamarb,khalifakeithbama
+1,Bama,5079508,Austin Mack,QB,1,0,austinmackbamaqb,austinmackbama
+1,Bama,5264688,EJ Crowell,RB,1,0,ejcrowellbamarb,ejcrowellbama
+1,Bama,5327659,Trae'shawn Brown,RB,1,0,traeshawnbrownbamarb,traeshawnbrownbama
+1,Bama,5141711,Ryan Coleman-Williams,WR,0,2,ryancolemanwilliamsbamawr,ryancolemanwilliamsbama
+1,Bama,4888707,Danny Lewis,TE,0,1,dannylewisbamate,dannylewisbama
+1,Bama,5079714,Rico Scott,WR,0,1,ricoscottbamawr,ricoscottbama
+1,Bayl,4921517,Dawson Pendergrass,RB,4,0,dawsonpendergrassbaylrb,dawsonpendergrassbayl
+1,Bayl,5295723,Caden Knighten,RB,2,0,cadenknightenbaylrb,cadenknightenbayl
+1,Boise,5146712,Dylan Riley,RB,4,0,dylanrileyboiserb,dylanrileyboise
+1,Boise,5147379,Sire Gaines,RB,2,0,siregainesboiserb,siregainesboise
+1,Boise,4870513,Maddux Madsen,QB,1,0,madduxmadsenboiseqb,madduxmadsenboise
+1,Buff,5328086,Elijah Holmes,QB,2,0,elijahholmesbuffqb,elijahholmesbuff
+1,Buff,,Jr.,RB,1,0,buffrb,buff
+1,Buff,5151369,Messiah Burch,RB,1,0,messiahburchbuffrb,messiahburchbuff
+1,Cal,5147861,Adam Mohammed,RB,5,0,adammohammedcalrb,adammohammedcal
+1,Cal,5164313,Jaron-Keawe Sagapolutele,QB,1,0,jaronkeawesagapolutelecalqb,jaronkeawesagapolutelecal
+1,Cin,4685509,Gi'Bran Payne,RB,3,0,gibranpaynecinrb,gibranpaynecin
+1,Cin,4685345,JC French IV,QB,1,0,jcfrenchcinqb,jcfrenchcin
+1,Cin,4917310,Zylan Perry,RB,1,0,zylanperrycinrb,zylanperrycin
+1,Cin,5219179,Zay Johnson,CB,1,0,zayjohnsoncincb,zayjohnsoncin
+1,Clem,4899369,Christopher Vizzina,QB,1,0,christophervizzinaclemqb,christophervizzinaclem
+1,Clem,5079438,David Eziomume,RB,1,0,davideziomumeclemrb,davideziomumeclem
+1,CoCar,5265325,Jevon Edwards,RB,1,0,jevonedwardscocarrb,jevonedwardscocar
+1,ColSt,,O.Lundberg Coleman,RB,1,0,olundbergcolemancolstrb,olundbergcolemancolst
+1,ColSt,5079443,Hauss Hejny,QB,1,0,hausshejnycolstqb,hausshejnycolst
+1,Colo,5096878,DeKalon Taylor,RB,3,0,dekalontaylorcolorb,dekalontaylorcolo
+1,Colo,5079626,Micah Welch,RB,2,0,micahwelchcolorb,micahwelchcolo
+1,Colo,,Shotgun Colorado,RB,1,0,shotguncoloradocolorb,shotguncoloradocolo
+1,Colo,4918094,Damian Henderson II,RB,1,0,damianhendersoncolorb,damianhendersoncolo
+1,Duke,5164332,Nate Sheppard,RB,6,0,nateshepparddukerb,natesheppardduke
+1,E Mi,5125733,Joey Mattord,RB,2,0,joeymattordemirb,joeymattordemi
+1,E Mi,5222594,Amareon Blue,RB,2,0,amareonblueemirb,amareonblueemi
+1,E Mi,4608922,Braydon Bennett,RB,1,0,braydonbennettemirb,braydonbennettemi
+1,E Mi,4690158,Noah Kim,QB,1,0,noahkimemiqb,noahkimemi
+1,ECU,4685237,Michael Allen,RB,2,0,michaelallenecurb,michaelallenecu
+1,ECU,5145453,Jeremiah Melvin,WR,0,1,jeremiahmelvinecuwr,jeremiahmelvinecu
+1,FlAtl,4869991,Caden Veltkamp,QB,2,0,cadenveltkampflatlqb,cadenveltkampflatl
+1,FlAtl,5390418,Leonard Farrow,RB,2,0,leonardfarrowflatlrb,leonardfarrowflatl
+1,FlAtl,5215500,Ethan Ervin,RB,1,0,ethanervinflatlrb,ethanervinflatl
+1,Fla,5079322,Jadan Baugh,RB,2,0,jadanbaughflarb,jadanbaughfla
+1,Fla,5141565,Byron Louis,RB,2,0,byronlouisflarb,byronlouisfla
+1,FlaSt,5141560,Ousmane Kromah,RB,5,0,ousmanekromahflastrb,ousmanekromahflast
+1,Fres,5010409,Jayden Mandal,QB,1,0,jaydenmandalfresqb,jaydenmandalfres
+1,GASt,5146273,Dennis Murray Jr.,RB,3,0,dennismurraygastrb,dennismurraygast
+1,GASt,5193926,Cameran Brown,QB,1,0,cameranbrowngastqb,cameranbrowngast
+1,GASt,5233868,Lanear McCrary Jr.,RB,1,0,lanearmccrarygastrb,lanearmccrarygast
+1,GATec,4870760,Justice Haynes,RB,2,0,justicehaynesgatecrb,justicehaynesgatec
+1,GaSo,5155780,Taeo Todd,RB,3,0,taeotoddgasorb,taeotoddgaso
+1,GaSo,4912238,Turner Helton,QB,2,0,turnerheltongasoqb,turnerheltongaso
+1,GaSo,,No Huddle-Shotgun Ga. Southern,RB,1,0,nohuddleshotgungasoutherngasorb,nohuddleshotgungasoutherngaso
+1,GaSo,5151111,Jamarian Samuel,RB,1,0,jamariansamuelgasorb,jamariansamuelgaso
+1,GaSo,5291806,Ty Cummings,RB,1,0,tycummingsgasorb,tycummingsgaso
+1,Hawaii,5079651,DeVon Rice,RB,4,0,devonricehawaiirb,devonricehawaii
+1,Hawaii,5101124,Micah Alejado,QB,2,0,micahalejadohawaiiqb,micahalejadohawaii
+1,Hawaii,5218869,Sitani Mikaele,RB,2,0,sitanimikaelehawaiirb,sitanimikaelehawaii
+1,Hou,4816098,Makhi Hughes,RB,1,0,makhihugheshourb,makhihugheshou
+1,Hou,5149563,DJ Butler,RB,1,0,djbutlerhourb,djbutlerhou
+1,IASt,5080403,Jaylen Raynor,QB,1,0,jaylenraynoriastqb,jaylenraynoriast
+1,IASt,5161735,Easton Miller,RB,1,0,eastonmilleriastrb,eastonmilleriast
+1,IASt,5194663,Cameron Pettaway,RB,1,0,cameronpettawayiastrb,cameronpettawayiast
+1,Ill,5106299,Ca'Lil Valentine,RB,3,0,calilvalentineillrb,calilvalentineill
+1,Ind,5091725,Lee Beebe Jr.,RB,2,0,leebeebeindrb,leebeebeind
+1,JMU,4685494,George Pettaway,RB,3,0,georgepettawayjmurb,georgepettawayjmu
+1,JMU,5298748,Nick Herman,RB,2,0,nickhermanjmurb,nickhermanjmu
+1,JMU,5172036,JC Evans,QB,1,0,jcevansjmuqb,jcevansjmu
+1,JacSt,5122157,Caden Creel,QB,5,0,cadencreeljacstqb,cadencreeljacst
+1,JacSt,5294241,Cedric Kouemi,RB,2,0,cedrickouemijacstrb,cedrickouemijacst
+1,JacSt,5226551,Jalen Likely,RB,1,0,jalenlikelyjacstrb,jalenlikelyjacst
+1,JacSt,5257214,Lucas Farrington,RB,1,0,lucasfarringtonjacstrb,lucasfarringtonjacst
+1,K St,5217820,Monterrio Elston Jr.,RB,2,0,monterrioelstonkstrb,monterrioelstonkst
+1,KY,5194702,Ahmir Smith,RB,2,0,ahmirsmithkyrb,ahmirsmithky
+1,KY,5123048,Jason Patterson,RB,1,0,jasonpattersonkyrb,jasonpattersonky
+1,Kan,4918414,Dylan Edwards,RB,1,0,dylanedwardskanrb,dylanedwardskan
+1,KennSt,5234086,Triston Morgan,RB,1,0,tristonmorgankennstrb,tristonmorgankennst
+1,LSU,5079482,Dilin Jones,RB,3,0,dilinjoneslsurb,dilinjoneslsu
+1,LSU,4921154,Eugene Wilson III,WR,1,0,eugenewilsonlsuwr,eugenewilsonlsu
+1,LSU,5078810,Sam Leavitt,QB,1,0,samleavittlsuqb,samleavittlsu
+1,LSU,5224789,Landen Clark,QB,1,0,landenclarklsuqb,landenclarklsu
+1,Lib,5138131,Deshawn Purdie,QB,2,0,deshawnpurdielibqb,deshawnpurdielib
+1,Lib,4602923,Jaylen Henderson,QB,1,0,jaylenhendersonlibqb,jaylenhendersonlib
+1,Lib,4832918,Ethan Vasko,QB,1,0,ethanvaskolibqb,ethanvaskolib
+1,Lib,4923298,Peyton Jones,RB,1,0,peytonjoneslibrb,peytonjoneslib
+1,Lou,5079349,Isaac Brown,RB,2,0,isaacbrownlourb,isaacbrownlou
+1,Lou,,Yd,RB,1,0,ydlourb,ydlou
+1,MD,5270858,Liam Willson,RB,1,0,liamwillsonmdrb,liamwillsonmd
+1,MD,5295550,DeJuan Williams,RB,1,0,dejuanwilliamsmdrb,dejuanwilliamsmd
+1,Mem,5222671,Jaylin Carter,RB,4,0,jaylincartermemrb,jaylincartermem
+1,Mem,5165807,Marcus Stokes,QB,2,0,marcusstokesmemqb,marcusstokesmem
+1,Mem,4922983,Manny Covey,RB,1,0,mannycoveymemrb,mannycoveymem
+1,MiaFL,4870736,Mark Fletcher Jr.,RB,3,0,markfletchermiaflrb,markfletchermiafl
+1,MiaFL,5156998,CharMar Brown,RB,2,0,charmarbrownmiaflrb,charmarbrownmiafl
+1,MiaFL,,Yd,RB,1,0,ydmiaflrb,ydmiafl
+1,MiaOH,5193270,D'Shawntae Jones,RB,1,0,dshawntaejonesmiaohrb,dshawntaejonesmiaoh
+1,Mich,5079574,Jordan Marshall,RB,4,0,jordanmarshallmichrb,jordanmarshallmich
+1,Mich,5159046,Savion Hiter,RB,4,0,savionhitermichrb,savionhitermich
+1,Mich,5141741,Bryce Underwood,QB,1,0,bryceunderwoodmichqb,bryceunderwoodmich
+1,MidTN,4685436,Antonio Martin,RB,2,0,antoniomartinmidtnrb,antoniomartinmidtn
+1,MidTN,5383050,Terrence Brown,RB,1,0,terrencebrownmidtnrb,terrencebrownmidtn
+1,MissSt,5146781,Xavier Gayten,RB,1,0,xaviergaytenmissstrb,xaviergaytenmissst
+1,MissSt,5177084,Kamario Taylor,QB,1,0,kamariotaylormissstqb,kamariotaylormissst
+1,MissSt,5209427,Kolin Wilson,RB,1,0,kolinwilsonmissstrb,kolinwilsonmissst
+1,MissSt,5220197,Fluff Bothwell,RB,1,0,fluffbothwellmissstrb,fluffbothwellmissst
+1,Mizzou,5225880,Xai'Shaun Edwards,RB,2,0,xaishaunedwardsmizzourb,xaishaunedwardsmizzou
+1,Mizzou,5225213,Malae Fonoti,RB,1,0,malaefonotimizzourb,malaefonotimizzou
+1,NCSt,5126513,Jayden Scott,RB,1,0,jaydenscottncstrb,jaydenscottncst
+1,NCSt,5148611,Will Wilson,QB,1,0,willwilsonncstqb,willwilsonncst
+1,ND,5079742,Aneyas Williams,RB,4,0,aneyaswilliamsndrb,aneyaswilliamsnd
+1,ND,5079369,CJ Carr,QB,1,0,cjcarrndqb,cjcarrnd
+1,ND,5189515,Nolan James Jr.,RB,1,0,nolanjamesndrb,nolanjamesnd
+1,NDSU,5087156,Nathan Hayes,QB,2,0,nathanhayesndsuqb,nathanhayesndsu
+1,NDSU,5157399,Nyeoti Punni,RB,2,0,nyeotipunnindsurb,nyeotipunnindsu
+1,NDSU,5154224,DJ Scott,RB,1,0,djscottndsurb,djscottndsu
+1,NDSU,5297931,Myles Mitchell,RB,1,0,mylesmitchellndsurb,mylesmitchellndsu
+1,NEV,5265178,Dominic Kelley,RB,3,0,dominickelleynevrb,dominickelleynev
+1,NEV,5220671,Herschel Turner,RB,1,0,herschelturnernevrb,herschelturnernev
+1,NM,5166161,Scottre Humphrey,RB,2,0,scottrehumphreynmrb,scottrehumphreynm
+1,NMS,4922995,Dijon Stanley,RB,2,0,dijonstanleynmsrb,dijonstanleynms
+1,NMS,5159150,Isaiah Rudison,RB,1,0,isaiahrudisonnmsrb,isaiahrudisonnms
+1,NW,5078244,Caleb Komolafe,RB,2,0,calebkomolafenwrb,calebkomolafenw
+1,NW,4816307,Joseph Himon II,RB,1,0,josephhimonnwrb,josephhimonnw
+1,Navy,,V.Listorti,RB,1,0,listortinavyrb,listortinavy
+1,NorTx,4911971,Jahiem White,RB,1,0,jahiemwhitenortxrb,jahiemwhitenortx
+1,NorTx,5175092,Chris Jimerson Jr.,QB,1,0,chrisjimersonnortxqb,chrisjimersonnortx
+1,OD,5294446,Trey Hall,RB,2,0,treyhallodrb,treyhallod
+1,OD,4922993,Devin Roche,RB,1,0,devinrocheodrb,devinrocheod
+1,OD,5193346,Quinn Henicle,QB,1,0,quinnhenicleodqb,quinnhenicleod
+1,OSU,5141517,Bo Jackson,RB,3,0,bojacksonosurb,bojacksonosu
+1,OSU,5182122,Legend Bey,RB,1,0,legendbeyosurb,legendbeyosu
+1,Ohio,5167252,Duncan Brune,RB,2,0,duncanbruneohiorb,duncanbruneohio
+1,Ohio,5228762,Nick Poulos,QB,1,0,nickpoulosohioqb,nickpoulosohio
+1,OkSt,5258016,Caleb Hawkins,RB,4,0,calebhawkinsokstrb,calebhawkinsokst
+1,OkSt,5224505,Tre Page III,RB,2,0,trepageokstrb,trepageokst
+1,OkSt,4875861,Ayo Adeyi,RB,1,0,ayoadeyiokstrb,ayoadeyiokst
+1,OreSt,4917981,AJ Newberry,RB,2,0,ajnewberryorestrb,ajnewberryorest
+1,OreSt,5209304,Kourdey Glass,RB,1,0,kourdeyglassorestrb,kourdeyglassorest
+1,OreSt,5212654,Braden Atkinson,QB,1,0,bradenatkinsonorestqb,bradenatkinsonorest
+1,Oreg,5141423,Jordon Davison,RB,1,0,jordondavisonoregrb,jordondavisonoreg
+1,PSU,5110454,James Peoples,RB,3,0,jamespeoplespsurb,jamespeoplespsu
+1,PSU,5079577,Quinton Martin Jr.,RB,2,0,quintonmartinpsurb,quintonmartinpsu
+1,PSU,5077502,Carson Hansen,RB,1,0,carsonhansenpsurb,carsonhansenpsu
+1,Pitt,5141677,Ja'Kyrian Turner,RB,3,0,jakyrianturnerpittrb,jakyrianturnerpitt
+1,Pur,5079410,Jerrick Gibson,RB,2,0,jerrickgibsonpurrb,jerrickgibsonpur
+1,Pur,5227400,Travis Terrell Jr.,RB,1,0,travisterrellpurrb,travisterrellpur
+1,Rice,5151063,Carson Morgan,RB,2,0,carsonmorganricerb,carsonmorganrice
+1,Rice,5082271,Quinton Jackson,RB,1,0,quintonjacksonricerb,quintonjacksonrice
+1,Rice,5087069,Max Mosey,WR,1,0,maxmoseyricewr,maxmoseyrice
+1,Rice,5207925,Tyvonn Byars,RB,1,0,tyvonnbyarsricerb,tyvonnbyarsrice
+1,Rice,5207930,D'Andre Hardeman Jr.,RB,1,0,dandrehardemanricerb,dandrehardemanrice
+1,SCar,5145737,Matt Fuller,RB,2,0,mattfullerscarrb,mattfullerscar
+1,SCar,4921292,Isaiah Augustave,RB,1,0,isaiahaugustavescarrb,isaiahaugustavescar
+1,SCar,5127724,Christian Clark,RB,1,0,christianclarkscarrb,christianclarkscar
+1,SDSU,4912453,Lucky Sutton,RB,2,0,luckysuttonsdsurb,luckysuttonsdsu
+1,SDSU,5254150,Javion Kinnard,RB,1,0,javionkinnardsdsurb,javionkinnardsdsu
+1,SJSU,4870662,Isaiah Carlson,RB,3,0,isaiahcarlsonsjsurb,isaiahcarlsonsjsu
+1,SJSU,4685254,Jabari Bates,RB,2,0,jabaribatessjsurb,jabaribatessjsu
+1,SJSU,,V.Teu,RB,1,0,teusjsurb,teusjsu
+1,SJSU,,Yd,RB,1,0,ydsjsurb,ydsjsu
+1,SJSU,5295238,Luke Weaver,QB,1,0,lukeweaversjsuqb,lukeweaversjsu
+1,SMU,4899368,Kendrick Raphael,RB,5,1,kendrickraphaelsmurb,kendrickraphaelsmu
+1,SMU,5207927,Dramekco Green,RB,2,0,dramekcogreensmurb,dramekcogreensmu
+1,SMU,5084084,Kevin Jennings,QB,1,0,kevinjenningssmuqb,kevinjenningssmu
+1,SMU,4870954,Randy Pittman,TE,0,1,randypittmansmute,randypittmansmu
+1,SMiss,5394596,Steven Robinson,RB,3,0,stevenrobinsonsmissrb,stevenrobinsonsmiss
+1,SMiss,5296029,Robert Henderson,RB,1,0,roberthendersonsmissrb,roberthendersonsmiss
+1,SacSt,5084459,Cincere Rhaney,RB,4,0,cincererhaneysacstrb,cincererhaneysacst
+1,SacSt,5310132,Daniel Swinney,RB,3,0,danielswinneysacstrb,danielswinneysacst
+1,SacSt,5082587,Matt Coleman,WR,1,0,mattcolemansacstwr,mattcolemansacst
+1,SacSt,5083848,Jamar Curtis,RB,1,0,jamarcurtissacstrb,jamarcurtissacst
+1,SacSt,5161820,Isaiah Ene,RB,1,0,isaiahenesacstrb,isaiahenesacst
+1,SamHu,4680018,Alton McCaskill,RB,2,0,altonmccaskillsamhurb,altonmccaskillsamhu
+1,SoAl,5295070,Keenan Phillips,RB,2,0,keenanphillipssoalrb,keenanphillipssoal
+1,SoAl,5079412,Trae'von Dunbar,RB,1,0,traevondunbarsoalrb,traevondunbarsoal
+1,Stan,5143191,Micah Ford,RB,6,0,micahfordstanrb,micahfordstan
+1,Stan,5156056,Champ Hampton,RB,2,0,champhamptonstanrb,champhamptonstan
+1,Stan,4870802,Sedrick Irvin,RB,1,0,sedrickirvinstanrb,sedrickirvinstan
+1,TCU,5079663,Jeremy Payne,RB,2,0,jeremypaynetcurb,jeremypaynetcu
+1,TCU,5214401,Jon Denman,RB,1,0,jondenmantcurb,jondenmantcu
+1,Tem,5296364,Keveun Mason,RB,2,0,keveunmasontemrb,keveunmasontem
+1,Tem,4258419,Hunter Smith,RB,1,0,huntersmithtemrb,huntersmithtem
+1,Tem,5291772,Coen Logan,WR,1,0,coenlogantemwr,coenlogantem
+1,Tenn,4921108,DeSean Bishop,RB,5,0,deseanbishoptennrb,deseanbishoptenn
+1,Tenn,5081378,Hunter Barnes,RB,1,0,hunterbarnestennrb,hunterbarnestenn
+1,Tenn,5141361,Justin Baker,RB,1,0,justinbakertennrb,justinbakertenn
+1,Tenn,5158973,Faizon Brandon,QB,1,0,faizonbrandontennqb,faizonbrandontenn
+1,Tex,4871053,Hollywood Smothers,RB,3,0,hollywoodsmotherstexrb,hollywoodsmotherstex
+1,Tex,5141729,Michael Terry III,RB,1,0,michaelterrytexrb,michaelterrytex
+1,Toled,5078063,Connor Walendzak,RB,1,0,connorwalendzaktoledrb,connorwalendzaktoled
+1,Troy,5120317,Jordan Lovett,RB,4,0,jordanlovetttroyrb,jordanlovetttroy
+1,Troy,5388754,Gavin Griffin,RB,3,0,gavingriffintroyrb,gavingriffintroy
+1,Troy,4431633,Goose Crowder,QB,1,0,goosecrowdertroyqb,goosecrowdertroy
+1,Tul,5091890,Kadin Semonza,QB,1,0,kadinsemonzatulqb,kadinsemonzatul
+1,Tuls,5295930,Trequan Jones,RB,2,0,trequanjonestulsrb,trequanjonestuls
+1,Tuls,4685699,Damari Alston,RB,1,0,damarialstontulsrb,damarialstontuls
+1,TxAM,5199850,Carsyn Baker,RB,1,0,carsynbakertxamrb,carsynbakertxam
+1,TxSt,5216509,Davian Jackson,RB,3,0,davianjacksontxstrb,davianjacksontxst
+1,TxTch,5193580,Cameron Dickey,RB,4,0,camerondickeytxtchrb,camerondickeytxtch
+1,TxTch,5086393,J'Koby Williams,RB,3,0,jkobywilliamstxtchrb,jkobywilliamstxtch
+1,TxTch,5294080,Quintaelyn Joyner,WR,2,0,quintaelynjoynertxtchwr,quintaelynjoynertxtch
+1,TxTch,5126468,Will Hammond,QB,1,0,willhammondtxtchqb,willhammondtxtch
+1,UAB,4897730,Bam McReynolds,RB,2,0,bammcreynoldsuabrb,bammcreynoldsuab
+1,UAB,5057381,Ryder Burton,QB,2,0,ryderburtonuabqb,ryderburtonuab
+1,UAB,5393806,Rashad Robinson,RB,2,0,rashadrobinsonuabrb,rashadrobinsonuab
+1,UAB,,Yd,RB,1,0,yduabrb,yduab
+1,UAB,5157261,Ja'Vin Simpkins,RB,1,0,javinsimpkinsuabrb,javinsimpkinsuab
+1,UCLA,4912342,Wayne Knight,RB,2,0,wayneknightuclarb,wayneknightucla
+1,UCLA,4870799,Nico Iamaleava,QB,1,0,nicoiamaleavauclaqb,nicoiamaleavaucla
+1,UCLA,5114332,Jaivian Thomas,RB,1,0,jaivianthomasuclarb,jaivianthomasucla
+1,UConn,5084906,Jaden Hart,RB,2,0,jadenhartuconnrb,jadenhartuconn
+1,UConn,4689529,Kenji Christian,RB,1,0,kenjichristianuconnrb,kenjichristianuconn
+1,UConn,5075952,Trey Cornist,RB,1,0,treycornistuconnrb,treycornistuconn
+1,UConn,5079619,Kalieb Osborne,QB,1,0,kaliebosborneuconnqb,kaliebosborneuconn
+1,UConn,5203601,Shawn Simeon,RB,1,0,shawnsimeonuconnrb,shawnsimeonuconn
+1,UD,5086952,Jo Silver,RB,2,0,josilverudrb,josilverud
+1,UD,5153846,Nick Minicucci,QB,1,0,nickminicucciudqb,nickminicucciud
+1,UD,5224766,Greg Spiller,RB,1,0,gregspillerudrb,gregspillerud
+1,UGA,5079335,Chauncey Bowens,RB,1,0,chaunceybowensugarb,chaunceybowensuga
+1,UGA,5172095,Bo Walker,RB,1,0,bowalkerugarb,bowalkeruga
+1,ULLaf,5227209,Anthony Reagan Jr.,RB,1,0,anthonyreaganullafrb,anthonyreaganullaf
+1,UMass,5264764,Elijah Faulkner,RB,5,0,elijahfaulknerumassrb,elijahfaulknerumass
+1,UMass,5388331,Curtis Kimmons IV,RB,3,0,curtiskimmonsumassrb,curtiskimmonsumass
+1,UNC,5008017,Benjamin Hall,RB,5,0,benjaminhalluncrb,benjaminhallunc
+1,UNC,5161835,Jaylen McGill,RB,1,0,jaylenmcgilluncrb,jaylenmcgillunc
+1,UNCC,5089860,Chance Williams,RB,2,0,chancewilliamsunccrb,chancewilliamsuncc
+1,UNCC,5148741,Khamani Alexander,RB,1,0,khamanialexanderunccrb,khamanialexanderuncc
+1,UNLV,4870607,Jackson Arnold,QB,7,0,jacksonarnoldunlvqb,jacksonarnoldunlv
+1,UNLV,5125754,Jai'Den Thomas,RB,1,0,jaidenthomasunlvrb,jaidenthomasunlv
+1,USC,5386510,Kayne Miller,RB,4,0,kaynemilleruscrb,kaynemillerusc
+1,USC,5295318,Waymond Jordan,RB,2,0,waymondjordanuscrb,waymondjordanusc
+1,UTEP,5232049,Raymond Moore III,QB,2,0,raymondmooreutepqb,raymondmooreutep
+1,UTEP,4685418,Tavorus Jones,RB,1,0,tavorusjonesuteprb,tavorusjonesutep
+1,UTEP,5141395,EJ Colson Jr.,QB,1,0,ejcolsonutepqb,ejcolsonutep
+1,UTSA,5223167,Will Henderson III,RB,2,0,willhendersonutsarb,willhendersonutsa
+1,UTSA,4918111,A'Marion Peterson,RB,1,0,amarionpetersonutsarb,amarionpetersonutsa
+1,UTSA,5078422,Brandon High Jr.,RB,1,0,brandonhighutsarb,brandonhighutsa
+1,UVA,5122553,Peyton Lewis,RB,4,0,peytonlewisuvarb,peytonlewisuva
+1,UVA,5121721,Jekail Middlebrook,RB,2,0,jekailmiddlebrookuvarb,jekailmiddlebrookuva
+1,UVA,4685696,Beau Pribula,QB,1,0,beaupribulauvaqb,beaupribulauva
+1,UVA,4873442,Xavier Brown,RB,1,0,xavierbrownuvarb,xavierbrownuva
+1,Utah,4804885,Brandon Rose,QB,2,0,brandonroseutahqb,brandonroseutah
+1,Utah,5173431,Wayshawn Parker,RB,1,0,wayshawnparkerutahrb,wayshawnparkerutah
+1,Utah,5203476,Daniel Bray,RB,1,0,danielbrayutahrb,danielbrayutah
+1,Utah,5264742,LaMarcus Bell,RB,1,0,lamarcusbellutahrb,lamarcusbellutah
+1,VaTec,5142238,Tyler Mason,RB,1,0,tylermasonvatecrb,tylermasonvatec
+1,Vand,4912302,Makhilyn Young,RB,3,0,makhilynyoungvandrb,makhilynyoungvand
+1,Vand,5030333,Sedrick Alexander,RB,1,0,sedrickalexandervandrb,sedrickalexandervand
+1,Vand,5121691,Blaze Berlowitz,QB,1,0,blazeberlowitzvandqb,blazeberlowitzvand
+1,Vand,5218655,Jamezell Lassiter,RB,1,0,jamezelllassitervandrb,jamezelllassitervand
+1,W Ky,4878394,Ajay Allen,RB,3,0,ajayallenwkyrb,ajayallenwky
+1,W Ky,5196864,Rodney Tisdale Jr.,QB,1,0,rodneytisdalewkyqb,rodneytisdalewky
+1,W Ky,5225936,Jaden McGill,RB,1,0,jadenmcgillwkyrb,jadenmcgillwky
+1,WVU,4918103,Cam Cook,RB,3,0,camcookwvurb,camcookwvu
+1,WVU,5141484,Maliek Hawkins,DB,3,0,maliekhawkinswvudb,maliekhawkinswvu
+1,WVU,5082584,DJ Epps,WR,1,0,djeppswvuwr,djeppswvu
+1,WVU,5384823,Armoni Weaver-Bomar,WR,1,0,armoniweaverbomarwvuwr,armoniweaverbomarwvu
+1,WaSt,5226019,Caden Pinnick,QB,2,0,cadenpinnickwastqb,cadenpinnickwast
+1,Wake,5216505,Jamar Searcy,RB,1,0,jamarsearcywakerb,jamarsearcywake
+1,Wake,5382529,Deuce Lawrence,RB,1,0,deucelawrencewakerb,deucelawrencewake
+1,Wash,4870868,Jayden Limar,RB,1,0,jaydenlimarwashrb,jaydenlimarwash
+1,Wash,5209302,Quaid Carr,RB,1,0,quaidcarrwashrb,quaidcarrwash
+1,WestMI,5074245,Broc Lowry,QB,1,0,broclowrywestmiqb,broclowrywestmi
+1,WestMI,5085006,Jalen Buckley,RB,1,0,jalenbuckleywestmirb,jalenbuckleywestmi
+1,WestMI,5218736,Emazon Littlejohn,WR,1,0,emazonlittlejohnwestmiwr,emazonlittlejohnwestmi
+1,Wisc,5078005,Abu Sama III,RB,2,0,abusamawiscrb,abusamawisc
+1,Wisc,5125715,Colton Joseph,QB,2,0,coltonjosephwiscqb,coltonjosephwisc
+1,Wyo,5258056,Samuel Harris,RB,2,0,samuelharriswyorb,samuelharriswyo
+1,Wyo,4838536,Tyler Hughes,QB,1,0,tylerhugheswyoqb,tylerhugheswyo
+2,AF,5238868,Liam Szarka,QB,2,0,liamszarkaafqb,liamszarkaaf
+2,Akr,5198324,Cibastian Broughton,QB,3,0,cibastianbroughtonakrqb,cibastianbroughtonakr
+2,Akr,5084582,Jordan Gant,RB,2,0,jordangantakrrb,jordangantakr
+2,Akr,5146708,Sean Patrick,RB,1,0,seanpatrickakrrb,seanpatrickakr
+2,App,4871065,Treyaun Webb,RB,3,0,treyaunwebbapprb,treyaunwebbapp
+2,App,5146664,Henry Hasselbeck,QB,2,0,henryhasselbeckappqb,henryhasselbeckapp
+2,App,4870999,Malachi Singleton,QB,1,0,malachisingletonappqb,malachisingletonapp
+2,App,5156152,Jaquari Lewis,RB,1,0,jaquarilewisapprb,jaquarilewisapp
+2,Ariz,4899361,Kedrick Reescano,RB,2,0,kedrickreescanoarizrb,kedrickreescanoariz
+2,Ariz,4801717,Noah Fifita,QB,1,0,noahfifitaarizqb,noahfifitaariz
+2,Ark,4805256,Sutton Smith,RB,2,0,suttonsmitharkrb,suttonsmithark
+2,Ark,5079589,Braylen Russell,RB,1,0,braylenrussellarkrb,braylenrussellark
+2,ArkSt,4888886,Kenyon Clay,RB,3,0,kenyonclayarkstrb,kenyonclayarkst
+2,ArkSt,5446579,James Lee,RB,1,0,jamesleearkstrb,jamesleearkst
+2,Army,5150297,Cale Hellums,QB,3,0,calehellumsarmyqb,calehellumsarmy
+2,Army,5293685,Godspower Nwawuihe,RB,3,0,godspowernwawuihearmyrb,godspowernwawuihearmy
+2,Army,5150329,Jake Rendina,RB,2,0,jakerendinaarmyrb,jakerendinaarmy
+2,Aub,4870642,Jeremiah Cobb,RB,1,0,jeremiahcobbaubrb,jeremiahcobbaub
+2,Aub,5217041,Omar Mabson II,RB,1,0,omarmabsonaubrb,omarmabsonaub
+2,BC,5076122,Evan Dickens,RB,3,0,evandickensbcrb,evandickensbc
+2,BC,5307005,Mason McKenzie,QB,2,0,masonmckenziebcqb,masonmckenziebc
+2,BC,5146747,Javarius Green,WR,1,0,javariusgreenbcwr,javariusgreenbc
+2,BYU,4918126,LJ Martin,RB,4,0,ljmartinbyurb,ljmartinbyu
+2,Ball,5077876,TJ Horton,RB,2,0,tjhortonballrb,tjhortonball
+2,Ball,4899137,Johnny Thompson Jr.,RB,1,0,johnnythompsonballrb,johnnythompsonball
+2,Bama,5079506,Daniel Hill,RB,7,0,danielhillbamarb,danielhillbama
+2,Bama,5141629,Keelon Russell,QB,1,0,keelonrussellbamaqb,keelonrussellbama
+2,Bama,5164343,Marshall Pritchett,TE,1,0,marshallpritchettbamate,marshallpritchettbama
+2,Bama,5264688,EJ Crowell,RB,1,0,ejcrowellbamarb,ejcrowellbama
+2,Bama,5327659,Trae'shawn Brown,RB,1,0,traeshawnbrownbamarb,traeshawnbrownbama
+2,Bayl,5295723,Caden Knighten,RB,2,0,cadenknightenbaylrb,cadenknightenbayl
+2,Bayl,5159106,Ryelan Morris,RB,1,0,ryelanmorrisbaylrb,ryelanmorrisbayl
+2,Bayl,5295724,Michael Turner,RB,1,0,michaelturnerbaylrb,michaelturnerbayl
+2,Boise,5147379,Sire Gaines,RB,4,0,siregainesboiserb,siregainesboise
+2,Boise,5146712,Dylan Riley,RB,3,0,dylanrileyboiserb,dylanrileyboise
+2,Boise,4870513,Maddux Madsen,QB,1,0,madduxmadsenboiseqb,madduxmadsenboise
+2,Buff,5151369,Messiah Burch,RB,2,0,messiahburchbuffrb,messiahburchbuff
+2,C Mi,5084769,Angel Flores,QB,2,0,angelflorescmiqb,angelflorescmi
+2,C Mi,,V.Blue,RB,1,0,bluecmirb,bluecmi
+2,C Mi,5157391,Jayden Clerveaux,RB,1,0,jaydenclerveauxcmirb,jaydenclerveauxcmi
+2,Cal,5147861,Adam Mohammed,RB,2,0,adammohammedcalrb,adammohammedcal
+2,Cal,5164313,Jaron-Keawe Sagapolutele,QB,1,0,jaronkeawesagapolutelecalqb,jaronkeawesagapolutelecal
+2,Cin,5107875,Cole Tabb,RB,1,0,coletabbcinrb,coletabbcin
+2,Cin,5219179,Zay Johnson,CB,1,0,zayjohnsoncincb,zayjohnsoncin
+2,Clem,5159078,Tait Reynolds,QB,1,0,taitreynoldsclemqb,taitreynoldsclem
+2,Clem,5159948,Chris Johnson Jr.,RB,1,0,chrisjohnsonclemrb,chrisjohnsonclem
+2,CoCar,5265325,Jevon Edwards,RB,2,0,jevonedwardscocarrb,jevonedwardscocar
+2,ColSt,5095078,Mel Brown,RB,1,0,melbrowncolstrb,melbrowncolst
+2,Colo,5079626,Micah Welch,RB,3,0,micahwelchcolorb,micahwelchcolo
+2,Colo,5301028,JaQuail Smith,RB,2,0,jaquailsmithcolorb,jaquailsmithcolo
+2,Colo,5214655,Kaneal Sweetwyne,QB,1,0,kanealsweetwynecoloqb,kanealsweetwynecolo
+2,Colo,5230274,Titus Bautista,RB,1,0,titusbautistacolorb,titusbautistacolo
+2,Colo,5239157,Quentin Gibson,WR,1,0,quentingibsoncolowr,quentingibsoncolo
+2,Duke,5164332,Nate Sheppard,RB,4,0,nateshepparddukerb,natesheppardduke
+2,Duke,4873588,CJ Campbell Jr.,RB,1,0,cjcampbelldukerb,cjcampbellduke
+2,E Mi,4608922,Braydon Bennett,RB,1,0,braydonbennettemirb,braydonbennettemi
+2,E Mi,4690158,Noah Kim,QB,1,0,noahkimemiqb,noahkimemi
+2,E Mi,5222594,Amareon Blue,RB,1,0,amareonblueemirb,amareonblueemi
+2,ECU,5194306,Ashton Gray,RB,2,0,ashtongrayecurb,ashtongrayecu
+2,FlAtl,5215500,Ethan Ervin,RB,1,0,ethanervinflatlrb,ethanervinflatl
+2,Fla,5295815,Duke Clark,RB,4,0,dukeclarkflarb,dukeclarkfla
+2,Fla,5079322,Jadan Baugh,RB,2,0,jadanbaughflarb,jadanbaughfla
+2,Fla,5141565,Byron Louis,RB,1,0,byronlouisflarb,byronlouisfla
+2,Fres,5262650,Julius Gillick,RB,2,0,juliusgillickfresrb,juliusgillickfres
+2,GASt,5193926,Cameran Brown,QB,3,0,cameranbrowngastqb,cameranbrowngast
+2,GASt,5146273,Dennis Murray Jr.,RB,2,0,dennismurraygastrb,dennismurraygast
+2,GASt,5233868,Lanear McCrary Jr.,RB,2,0,lanearmccrarygastrb,lanearmccrarygast
+2,GATec,5155366,Malachi Hosley,RB,1,0,malachihosleygatecrb,malachihosleygatec
+2,GaSo,4685740,Max Johnson,QB,1,0,maxjohnsongasoqb,maxjohnsongaso
+2,GaSo,5155780,Taeo Todd,RB,1,0,taeotoddgasorb,taeotoddgaso
+2,IASt,5080403,Jaylen Raynor,QB,2,0,jaylenraynoriastqb,jaylenraynoriast
+2,IASt,5161735,Easton Miller,RB,1,0,eastonmilleriastrb,eastonmilleriast
+2,IASt,5194663,Cameron Pettaway,RB,1,0,cameronpettawayiastrb,cameronpettawayiast
+2,IASt,5219258,Aiden Flora,RB,1,0,aidenfloraiastrb,aidenfloraiast
+2,IASt,5290871,Amiri Barnes,CB,1,0,amiribarnesiastcb,amiribarnesiast
+2,Ill,5106299,Ca'Lil Valentine,RB,1,0,calilvalentineillrb,calilvalentineill
+2,Ind,5091725,Lee Beebe Jr.,RB,1,0,leebeebeindrb,leebeebeind
+2,Ind,5164320,Sean Cuono,RB,1,0,seancuonoindrb,seancuonoind
+2,Ind,5214648,Jayreon Campbell,RB,1,0,jayreoncampbellindrb,jayreoncampbellind
+2,Iowa,5093886,Kamari Moulton,RB,1,0,kamarimoultoniowarb,kamarimoultoniowa
+2,Iowa,5218931,DJ Vonnahme,TE,1,0,djvonnahmeiowate,djvonnahmeiowa
+2,JMU,5257958,Jackson McCarter,RB,1,0,jacksonmccarterjmurb,jacksonmccarterjmu
+2,JMU,5298748,Nick Herman,RB,1,0,nickhermanjmurb,nickhermanjmu
+2,JacSt,5122157,Caden Creel,QB,10,0,cadencreeljacstqb,cadencreeljacst
+2,JacSt,5257214,Lucas Farrington,RB,2,0,lucasfarringtonjacstrb,lucasfarringtonjacst
+2,JacSt,,Yd,RB,1,0,ydjacstrb,ydjacst
+2,JacSt,5226550,Khristian Lando,RB,1,0,khristianlandojacstrb,khristianlandojacst
+2,K St,5078916,Joe Jackson,RB,1,0,joejacksonkstrb,joejacksonkst
+2,K St,5125335,Rodney Fields Jr.,RB,1,0,rodneyfieldskstrb,rodneyfieldskst
+2,K St,5193496,Jay Harris,RB,1,0,jayharriskstrb,jayharriskst
+2,K St,5230290,Andrew Johnson,LS,1,0,andrewjohnsonkstls,andrewjohnsonkst
+2,KY,4870609,CJ Baxter,RB,2,0,cjbaxterkyrb,cjbaxterky
+2,KY,4685269,Jovantae Barnes,RB,1,0,jovantaebarneskyrb,jovantaebarnesky
+2,KY,5123048,Jason Patterson,RB,1,0,jasonpattersonkyrb,jasonpattersonky
+2,Kan,5079749,Yasin Willis,RB,2,0,yasinwilliskanrb,yasinwilliskan
+2,Kan,4918414,Dylan Edwards,RB,1,0,dylanedwardskanrb,dylanedwardskan
+2,Kan,5079604,Isaiah Marshall,QB,1,0,isaiahmarshallkanqb,isaiahmarshallkan
+2,Kan,5216559,Tate Nagy,WR,1,0,tatenagykanwr,tatenagykan
+2,KennSt,4870645,Rickie Collins,QB,2,0,rickiecollinskennstqb,rickiecollinskennst
+2,KennSt,5220641,Boogie Woods III,RB,2,0,boogiewoodskennstrb,boogiewoodskennst
+2,Kent,5119841,Dru DeShields,QB,5,0,drudeshieldskentqb,drudeshieldskent
+2,Kent,4875755,Mason King,RB,2,0,masonkingkentrb,masonkingkent
+2,LSU,5079405,Stacy Gage,RB,1,0,stacygagelsurb,stacygagelsu
+2,LT,5296376,Trey Kukuk,QB,1,0,treykukukltqb,treykukuklt
+2,Lib,4923298,Peyton Jones,RB,2,0,peytonjoneslibrb,peytonjoneslib
+2,Lib,5079364,Kam Davis,RB,1,0,kamdavislibrb,kamdavislib
+2,Lib,5296294,Jaylon Coleman,RB,1,0,jayloncolemanlibrb,jayloncolemanlib
+2,Lou,5079349,Isaac Brown,RB,2,0,isaacbrownlourb,isaacbrownlou
+2,Lou,5078278,Lincoln Kienholz,QB,1,0,lincolnkienholzlouqb,lincolnkienholzlou
+2,Lou,5209960,Lekhy Thompkins,RB,1,0,lekhythompkinslourb,lekhythompkinslou
+2,Lou,5294063,Tre Richardson,WR,1,0,trerichardsonlouwr,trerichardsonlou
+2,MD,5141419,Harry Dalton III,RB,6,0,harrydaltonmdrb,harrydaltonmd
+2,MD,5141522,Iverson Howard,RB,6,0,iversonhowardmdrb,iversonhowardmd
+2,MIN,4920901,Darius Taylor,RB,1,0,dariustaylorminrb,dariustaylormin
+2,MIN,5264245,Xavier Ford,RB,1,0,xavierfordminrb,xavierfordmin
+2,MSU,5086034,Cam Edwards,RB,1,0,camedwardsmsurb,camedwardsmsu
+2,Marsh,5084210,Jo'Shon Barbie,RB,3,0,joshonbarbiemarshrb,joshonbarbiemarsh
+2,Marsh,4432691,Carlos Del Rio-Wilson,QB,2,0,carlosdelriowilsonmarshqb,carlosdelriowilsonmarsh
+2,Marsh,5081172,Xayvion Turner-Bradshaw,WR,1,0,xayvionturnerbradshawmarshwr,xayvionturnerbradshawmarsh
+2,Mem,5165807,Marcus Stokes,QB,4,0,marcusstokesmemqb,marcusstokesmem
+2,Mem,4922983,Manny Covey,RB,1,0,mannycoveymemrb,mannycoveymem
+2,Mem,5222671,Jaylin Carter,RB,1,0,jaylincartermemrb,jaylincartermem
+2,MiaFL,5156998,CharMar Brown,RB,1,0,charmarbrownmiaflrb,charmarbrownmiafl
+2,MiaFL,5164331,Girard Pringle Jr.,RB,1,0,girardpringlemiaflrb,girardpringlemiafl
+2,Mich,5159046,Savion Hiter,RB,2,0,savionhitermichrb,savionhitermich
+2,Mich,5079574,Jordan Marshall,RB,1,0,jordanmarshallmichrb,jordanmarshallmich
+2,Mich,5141741,Bryce Underwood,QB,1,0,bryceunderwoodmichqb,bryceunderwoodmich
+2,Mich,5156348,Bryson Kuzdzal,RB,1,0,brysonkuzdzalmichrb,brysonkuzdzalmich
+2,Miss,5084286,Makhi Frazier,RB,2,0,makhifraziermissrb,makhifraziermiss
+2,Miss,5086388,Kewan Lacy,RB,1,0,kewanlacymissrb,kewanlacymiss
+2,MissSt,5209427,Kolin Wilson,RB,5,0,kolinwilsonmissstrb,kolinwilsonmissst
+2,MissSt,5220197,Fluff Bothwell,RB,3,0,fluffbothwellmissstrb,fluffbothwellmissst
+2,MissSt,5146781,Xavier Gayten,RB,1,0,xaviergaytenmissstrb,xaviergaytenmissst
+2,Mizzou,4921116,Jamal Roberts,RB,10,0,jamalrobertsmizzourb,jamalrobertsmizzou
+2,Mizzou,5225880,Xai'Shaun Edwards,RB,3,0,xaishaunedwardsmizzourb,xaishaunedwardsmizzou
+2,MoSt,5154284,Ramone Green Jr.,RB,2,0,ramonegreenmostrb,ramonegreenmost
+2,NCSt,5079468,Davion Gause,RB,2,0,daviongausencstrb,daviongausencst
+2,NCSt,5378093,Dy'Lan Johnson,CB,1,0,dylanjohnsonncstcb,dylanjohnsonncst
+2,ND,5159087,Jonaz Walton,RB,1,0,jonazwaltonndrb,jonazwaltonnd
+2,NDSU,5087156,Nathan Hayes,QB,2,0,nathanhayesndsuqb,nathanhayesndsu
+2,NDSU,5297931,Myles Mitchell,RB,2,0,mylesmitchellndsurb,mylesmitchellndsu
+2,NDSU,5154224,DJ Scott,RB,1,0,djscottndsurb,djscottndsu
+2,NEV,4819250,AJ Bianco,QB,1,0,ajbianconevqb,ajbianconev
+2,NEV,5220671,Herschel Turner,RB,1,0,herschelturnernevrb,herschelturnernev
+2,NEV,5265178,Dominic Kelley,RB,1,0,dominickelleynevrb,dominickelleynev
+2,NM,5146726,Kiefer Sibley,RB,1,0,kiefersibleynmrb,kiefersibleynm
+2,NMS,5220253,James Jones,RB,2,0,jamesjonesnmsrb,jamesjonesnms
+2,Navy,5158374,Isaiah Bryant,WR,1,0,isaiahbryantnavywr,isaiahbryantnavy
+2,Neb,5044387,Anthony Colandrea,QB,1,0,anthonycolandreanebqb,anthonycolandreaneb
+2,NorTx,4911971,Jahiem White,RB,1,0,jahiemwhitenortxrb,jahiemwhitenortx
+2,NorTx,5238020,Brendon Haygood,RB,1,0,brendonhaygoodnortxrb,brendonhaygoodnortx
+2,OD,4922993,Devin Roche,RB,2,0,devinrocheodrb,devinrocheod
+2,OD,5193346,Quinn Henicle,QB,2,0,quinnhenicleodqb,quinnhenicleod
+2,OD,5394557,Ja'Varien Salter,RB,1,0,javariensalterodrb,javariensalterod
+2,OSU,5141517,Bo Jackson,RB,6,0,bojacksonosurb,bojacksonosu
+2,OSU,5151892,Ja'Kobi Jackson,RB,2,0,jakobijacksonosurb,jakobijacksonosu
+2,Ohio,5167252,Duncan Brune,RB,3,0,duncanbruneohiorb,duncanbruneohio
+2,OkSt,5258016,Caleb Hawkins,RB,3,0,calebhawkinsokstrb,calebhawkinsokst
+2,OreSt,4917981,AJ Newberry,RB,2,0,ajnewberryorestrb,ajnewberryorest
+2,OreSt,5085883,Jake Reichle,RB,1,0,jakereichleorestrb,jakereichleorest
+2,OreSt,5167313,Cornell Hatcher Jr.,RB,1,0,cornellhatcherorestrb,cornellhatcherorest
+2,Oreg,5141423,Jordon Davison,RB,1,0,jordondavisonoregrb,jordondavisonoreg
+2,PSU,5077502,Carson Hansen,RB,4,0,carsonhansenpsurb,carsonhansenpsu
+2,PSU,4801299,Rocco Becht,QB,1,0,roccobechtpsuqb,roccobechtpsu
+2,PSU,5110454,James Peoples,RB,1,0,jamespeoplespsurb,jamespeoplespsu
+2,PSU,5121541,Cam Wallace,RB,1,0,camwallacepsurb,camwallacepsu
+2,Pitt,5158978,Damon Ferguson Jr.,RB,3,0,damonfergusonpittrb,damonfergusonpitt
+2,Pitt,4683234,La'Vell Wright,RB,2,0,lavellwrightpittrb,lavellwrightpitt
+2,Pitt,5208095,Mason Heintschel,QB,2,0,masonheintschelpittqb,masonheintschelpitt
+2,Pur,5227400,Travis Terrell Jr.,RB,1,0,travisterrellpurrb,travisterrellpur
+2,Rut,5209945,Antwan Raymond,RB,8,0,antwanraymondrutrb,antwanraymondrut
+2,Rut,5079717,AJ Surace,QB,1,0,ajsuracerutqb,ajsuracerut
+2,Rut,5296378,Clay Thevenin,RB,1,0,claytheveninrutrb,claytheveninrut
+2,SCar,5145737,Matt Fuller,RB,1,0,mattfullerscarrb,mattfullerscar
+2,SCar,5151218,Lucian Anderson III,QB,1,0,lucianandersonscarqb,lucianandersonscar
+2,SDSU,5254150,Javion Kinnard,RB,1,0,javionkinnardsdsurb,javionkinnardsdsu
+2,SJSU,4685254,Jabari Bates,RB,3,0,jabaribatessjsurb,jabaribatessjsu
+2,SMU,5207927,Dramekco Green,RB,1,0,dramekcogreensmurb,dramekcogreensmu
+2,SMiss,5394596,Steven Robinson,RB,5,0,stevenrobinsonsmissrb,stevenrobinsonsmiss
+2,SacSt,5083848,Jamar Curtis,RB,1,0,jamarcurtissacstrb,jamarcurtissacst
+2,SamHu,5148427,Landyn Locke,QB,1,0,landynlockesamhuqb,landynlockesamhu
+2,SamHu,5160209,Landan Brown,RB,1,0,landanbrownsamhurb,landanbrownsamhu
+2,SoAl,5295070,Keenan Phillips,RB,3,0,keenanphillipssoalrb,keenanphillipssoal
+2,SoAl,5124334,PJ Martin,RB,1,0,pjmartinsoalrb,pjmartinsoal
+2,SoFL,5154559,Jason Collins Jr.,RB,2,0,jasoncollinssoflrb,jasoncollinssofl
+2,SoFL,5079542,Luke Kromenhoek,QB,1,0,lukekromenhoeksoflqb,lukekromenhoeksofl
+2,SoFL,5079620,Michael Van Buren Jr.,QB,1,0,michaelvanburensoflqb,michaelvanburensofl
+2,Syr,5079537,Ju'Juan Johnson,RB,3,0,jujuanjohnsonsyrrb,jujuanjohnsonsyr
+2,Syr,5289321,Shavane Anderson Jr.,RB,2,0,shavaneandersonsyrrb,shavaneandersonsyr
+2,Syr,5200435,Demetres Samuel Jr.,DB,1,0,demetressamuelsyrdb,demetressamuelsyr
+2,TCU,5083569,Jaden Craig,QB,1,0,jadencraigtcuqb,jadencraigtcu
+2,Tem,5296364,Keveun Mason,RB,3,0,keveunmasontemrb,keveunmasontem
+2,Tem,4258419,Hunter Smith,RB,2,0,huntersmithtemrb,huntersmithtem
+2,Tem,5077787,Jaxon Smolik,QB,1,0,jaxonsmoliktemqb,jaxonsmoliktem
+2,Tenn,5294293,Javin Gordon,RB,2,0,javingordontennrb,javingordontenn
+2,Tenn,4921108,DeSean Bishop,RB,1,0,deseanbishoptennrb,deseanbishoptenn
+2,Tenn,5158973,Faizon Brandon,QB,1,0,faizonbrandontennqb,faizonbrandontenn
+2,Tex,4870906,Arch Manning,QB,2,0,archmanningtexqb,archmanningtex
+2,Tex,4871053,Hollywood Smothers,RB,1,0,hollywoodsmotherstexrb,hollywoodsmotherstex
+2,Toled,5092811,CJ Miller,RB,1,0,cjmillertoledrb,cjmillertoled
+2,Toled,5211696,Noah Sanders,RB,1,0,noahsanderstoledrb,noahsanderstoled
+2,Troy,5120317,Jordan Lovett,RB,3,0,jordanlovetttroyrb,jordanlovetttroy
+2,Troy,4912119,Tucker Kilcrease,QB,1,0,tuckerkilcreasetroyqb,tuckerkilcreasetroy
+2,Troy,5388765,Bryce Burgess,RB,1,0,bryceburgesstroyrb,bryceburgesstroy
+2,Tul,4871148,Jaylin Lucas,RB,4,0,jaylinlucastulrb,jaylinlucastul
+2,Tul,5091890,Kadin Semonza,QB,1,0,kadinsemonzatulqb,kadinsemonzatul
+2,Tul,5218820,Johnnie Daniels,RB,1,0,johnniedanielstulrb,johnniedanielstul
+2,Tuls,4685699,Damari Alston,RB,2,0,damarialstontulsrb,damarialstontuls
+2,Tuls,5295930,Trequan Jones,RB,1,0,trequanjonestulsrb,trequanjonestuls
+2,TxAM,4870934,Rueben Owens II,RB,1,0,ruebenowenstxamrb,ruebenowenstxam
+2,TxAM,5141561,Jamarion Morrow,RB,1,0,jamarionmorrowtxamrb,jamarionmorrowtxam
+2,TxAM,5158975,KJ Edwards,RB,1,0,kjedwardstxamrb,kjedwardstxam
+2,TxSt,5088888,Torrance Burgess Jr.,RB,3,0,torranceburgesstxstrb,torranceburgesstxst
+2,TxTch,5193580,Cameron Dickey,RB,3,0,camerondickeytxtchrb,camerondickeytxtch
+2,TxTch,4773919,Tommy Castellanos,QB,2,0,tommycastellanostxtchqb,tommycastellanostxtch
+2,TxTch,5086393,J'Koby Williams,RB,1,0,jkobywilliamstxtchrb,jkobywilliamstxtch
+2,TxTch,5126468,Will Hammond,QB,1,0,willhammondtxtchqb,willhammondtxtch
+2,UAB,5393806,Rashad Robinson,RB,1,0,rashadrobinsonuabrb,rashadrobinsonuab
+2,UCF,4911929,Alonza Barnett III,QB,1,0,alonzabarnettucfqb,alonzabarnettucf
+2,UCF,5141668,Taevion Swint,RB,1,0,taevionswintucfrb,taevionswintucf
+2,UCLA,4912342,Wayne Knight,RB,3,0,wayneknightuclarb,wayneknightucla
+2,UCLA,5083175,Anthony Woods,RB,1,0,anthonywoodsuclarb,anthonywoodsucla
+2,UConn,5075952,Trey Cornist,RB,3,0,treycornistuconnrb,treycornistuconn
+2,UConn,4689529,Kenji Christian,RB,1,0,kenjichristianuconnrb,kenjichristianuconn
+2,UConn,5079619,Kalieb Osborne,QB,1,0,kaliebosborneuconnqb,kaliebosborneuconn
+2,UD,5086952,Jo Silver,RB,2,0,josilverudrb,josilverud
+2,UD,,V.Ellison Jr.,RB,1,0,ellisonudrb,ellisonud
+2,UD,5224762,Braden Streeter,QB,1,0,bradenstreeterudqb,bradenstreeterud
+2,UGA,5446770,Nick Peal,RB,5,0,nickpealugarb,nickpealuga
+2,UGA,5172095,Bo Walker,RB,3,0,bowalkerugarb,bowalkeruga
+2,UGA,5084047,Nate Frazier,RB,1,0,natefrazierugarb,natefrazieruga
+2,UGA,5229348,Hezekiah Millender,QB,1,0,hezekiahmillenderugaqb,hezekiahmillenderuga
+2,ULLaf,4871091,Lunch Winfield,QB,4,0,lunchwinfieldullafqb,lunchwinfieldullaf
+2,ULLaf,5194804,Steven Blanco,RB,1,0,stevenblancoullafrb,stevenblancoullaf
+2,ULLaf,5227209,Anthony Reagan Jr.,RB,1,0,anthonyreaganullafrb,anthonyreaganullaf
+2,ULMon,5207934,Austin Carlisle,QB,4,0,austincarlisleulmonqb,austincarlisleulmon
+2,ULMon,5382854,CJ Phillip,RB,2,0,cjphillipulmonrb,cjphillipulmon
+2,ULMon,4431516,Brandon Buckhaulter,WR,1,0,brandonbuckhaulterulmonwr,brandonbuckhaulterulmon
+2,ULMon,5382856,Bryson Roland,RB,1,0,brysonrolandulmonrb,brysonrolandulmon
+2,UMass,5388331,Curtis Kimmons IV,RB,1,0,curtiskimmonsumassrb,curtiskimmonsumass
+2,UNC,5228607,Demon June,RB,2,0,demonjuneuncrb,demonjuneunc
+2,UNCC,5089540,Cole Gonzales,QB,2,0,colegonzalesunccqb,colegonzalesuncc
+2,UNCC,5089860,Chance Williams,RB,2,0,chancewilliamsunccrb,chancewilliamsuncc
+2,UNLV,4808744,Jaylon Glover,RB,2,0,jaylongloverunlvrb,jaylongloverunlv
+2,UNLV,4870607,Jackson Arnold,QB,2,0,jacksonarnoldunlvqb,jacksonarnoldunlv
+2,UNLV,5125754,Jai'Den Thomas,RB,1,0,jaidenthomasunlvrb,jaidenthomasunlv
+2,USC,5386510,Kayne Miller,RB,3,0,kaynemilleruscrb,kaynemillerusc
+2,UTEP,4685418,Tavorus Jones,RB,1,0,tavorusjonesuteprb,tavorusjonesutep
+2,UTEP,5091891,Lamar Sperling,RB,1,0,lamarsperlinguteprb,lamarsperlingutep
+2,UTEP,5141395,EJ Colson Jr.,QB,1,0,ejcolsonutepqb,ejcolsonutep
+2,UTEP,5232049,Raymond Moore III,QB,1,0,raymondmooreutepqb,raymondmooreutep
+2,UTSA,5078422,Brandon High Jr.,RB,5,0,brandonhighutsarb,brandonhighutsa
+2,UTSA,4775136,Owen McCown,QB,2,0,owenmccownutsaqb,owenmccownutsa
+2,UTSA,4918111,A'Marion Peterson,RB,1,0,amarionpetersonutsarb,amarionpetersonutsa
+2,UTSA,5223167,Will Henderson III,RB,1,0,willhendersonutsarb,willhendersonutsa
+2,UTSA,5146987,Brandon Young Jr.,TE,0,1,brandonyoungutsate,brandonyoungutsa
+2,UVA,5078110,Noah Vaughn,RB,1,0,noahvaughnuvarb,noahvaughnuva
+2,UtSt,5081197,Grady Brosterhous,QB,2,0,gradybrosterhousutstqb,gradybrosterhousutst
+2,VaTec,,Jr.,RB,2,0,vatecrb,vatec
+2,Vand,5030333,Sedrick Alexander,RB,1,0,sedrickalexandervandrb,sedrickalexandervand
+2,Vand,5121691,Blaze Berlowitz,QB,1,0,blazeberlowitzvandqb,blazeberlowitzvand
+2,W Ky,4920158,Brock Glenn,QB,2,0,brockglennwkyqb,brockglennwky
+2,WVU,4918103,Cam Cook,RB,2,0,camcookwvurb,camcookwvu
+2,WVU,5219881,Darius Morant,RB,2,0,dariusmorantwvurb,dariusmorantwvu
+2,WVU,5141456,TaRon Francis,WR,1,0,taronfranciswvuwr,taronfranciswvu
+2,WVU,5164314,Scotty Fox Jr.,QB,1,0,scottyfoxwvuqb,scottyfoxwvu
+2,Wake,5382529,Deuce Lawrence,RB,6,0,deucelawrencewakerb,deucelawrencewake
+2,Wake,5186586,Ty Clark III,RB,5,0,tyclarkwakerb,tyclarkwake
+2,Wake,4920227,Gio Lopez,QB,3,0,giolopezwakeqb,giolopezwake
+2,Wake,,Yd,RB,2,0,ydwakerb,ydwake
+2,Wash,4601283,Trey Cooley,RB,2,0,treycooleywashrb,treycooleywash
+2,Wash,5200430,Brian Bonner Jr.,RB,2,0,brianbonnerwashrb,brianbonnerwash
+2,Wash,5079653,Demond Williams Jr.,QB,1,0,demondwilliamswashqb,demondwilliamswash
+2,WestMI,4917858,Cole Cabana,RB,1,0,colecabanawestmirb,colecabanawestmi
+2,WestMI,5126475,Trey Petty,QB,1,0,treypettywestmiqb,treypettywestmi
+2,WestMI,5282469,Harper Hughes,WR,1,0,harperhugheswestmiwr,harperhugheswestmi
+2,WestMI,5296166,Ofa Mataele,RB,1,0,ofamataelewestmirb,ofamataelewestmi
+2,Wyo,4838536,Tyler Hughes,QB,1,0,tylerhugheswyoqb,tylerhugheswyo
+2,Wyo,5227257,Markell Holman,RB,1,0,markellholmanwyorb,markellholmanwyo
