@@ -1,9 +1,12 @@
 import os
 import re
-from datetime import datetime
+import sys
+import time
+import requests
 import pandas as pd
+from datetime import datetime
 
-# 1. FBS Team Name to Preferred Abbreviation Mapping (138 Teams)
+# 1. Preferred FBS Abbreviations (138 Teams + Aliases)
 TEAM_MAP = {
     "Air Force": "AF", "Akron": "Akr", "Appalachian State": "App", "Arizona": "Ariz",
     "Arkansas": "Ark", "Arkansas State": "ArkSt", "Army": "Army", "Auburn": "Aub",
@@ -39,124 +42,155 @@ TEAM_MAP = {
     "Utah State": "UtSt", "Utah": "Utah", "Virginia Tech": "VaTec", "Vanderbilt": "Vand",
     "Western Kentucky": "W Ky", "West Virginia": "WVU", "Washington State": "WaSt", "Wake Forest": "Wake",
     "Washington": "Wash", "Western Michigan": "WestMI", "Wisconsin": "Wisc", "Wyoming": "Wyo",
-    "Sacramento State": "SacSt", "North Dakota State": "NDSU"
+    "Sacramento State": "SacSt", "North Dakota State": "NDSU",
+
+    # Name variants
+    "App State": "App", "Miami (FL)": "MiaFL", "Miami FL": "MiaFL", "Miami (OH)": "MiaOH",
+    "San Jose State": "SJSU", "Hawaii": "Hawaii", "UL Monroe": "ULMon", "Louisiana Monroe": "ULMon",
+    "Louisiana-Lafayette": "ULLaf", "North Carolina State": "NCSt", "Massachusetts": "UMass",
+    "Connecticut": "UConn", "Florida International": "FLInt", "Middle Tennessee State": "MidTN"
 }
 
-def clean_key_text(text: str) -> str:
-    """Strips suffixes, punctuation, spaces, and lowers case."""
-    if not text or pd.isna(text):
-        return ""
-    text = str(text).lower()
-    # Remove generational and academic suffixes
-    text = re.sub(r'\b(jr|sr|ii|iii|iv|v)\b', '', text)
-    # Keep only alphanumeric characters
-    text = re.sub(r'[^a-z0-9]', '', text)
-    return text.strip()
+NORM_TEAM_MAP = {re.sub(r'[^a-z0-9]', '', k.lower()): v for k, v in TEAM_MAP.items()}
 
-def normalize_pos(pos: str) -> str:
-    if not pos or pd.isna(pos):
-        return ""
-    p = str(pos).upper().strip()
-    if p in ['HB', 'FB']:
-        return 'RB'
-    return p
+def resolve_team(name: str) -> str:
+    if not name: return ""
+    clean = re.sub(r'[^a-z0-9]', '', str(name).lower())
+    return NORM_TEAM_MAP.get(clean, "")
+
+def clean_key(text: str) -> str:
+    if not text: return ""
+    text = str(text).lower()
+    text = re.sub(r'\b(jr|sr|ii|iii|iv|v)\b', '', text)
+    return re.sub(r'[^a-z0-9]', '', text).strip()
+
+def parse_skill_position(play_type: str, is_rush: bool) -> str:
+    return "RB" if is_rush else "WR"
 
 def main():
-    season = datetime.now().year
-    pbp_url = f"https://github.com/sportsdataverse/cfbfastR-data/releases/download/pbp/play_by_play_{season}.parquet"
-    roster_url = f"https://github.com/sportsdataverse/cfbfastR-data/releases/download/rosters/roster_{season}.parquet"
+    api_key = os.environ.get("CFBD_API_KEY")
+    if not api_key:
+        print("ERROR: CFBD_API_KEY environment variable is missing.")
+        sys.exit(1)
 
-    print(f"Loading {season} PBP and Roster data from sportsdataverse...")
-    try:
-        pbp = pd.read_parquet(pbp_url)
-        roster = pd.read_parquet(roster_url)
-    except Exception as e:
-        print(f"Error loading {season} parquet files: {e}")
-        return
+    headers = {"Authorization": f"Bearer {api_key}"}
+    season = int(os.environ.get("CFB_SEASON", datetime.now().year))
+    base_url = "https://api.collegefootballdata.com"
 
-    # Prepare Roster lookup
-    roster['team_abbr'] = roster['team'].map(TEAM_MAP)
-    roster = roster.dropna(subset=['team_abbr'])
-    roster['norm_pos'] = roster['position'].apply(normalize_pos)
-    roster_lookup = roster.drop_duplicates(subset=['athlete_id']).set_index('athlete_id')[['norm_pos', 'name']].to_dict('index')
+    # Schema output
+    out_cols = [
+        'week', 'team', 'player_id', 'player_name', 'position',
+        'rz_rush_att', 'rz_targets', 'match_key', 'alt_key'
+    ]
+    os.makedirs('data', exist_ok=True)
+    out_path = os.path.join('data', 'redzone_weekly.csv')
 
-    # Filter for Red Zone plays (inside the 20, excluding defensive scores/safeties)
-    rz = pbp[(pbp['yardline_100'] <= 20) & (pbp['yardline_100'] > 0)].copy()
-    rz['team_abbr'] = rz['pos_team'].map(TEAM_MAP)
-    rz = rz.dropna(subset=['team_abbr'])
+    # Get current calendar / completed weeks from CFBD
+    print(f"Fetching season calendar for {season}...")
+    cal_resp = requests.get(f"{base_url}/calendar?year={season}", headers=headers)
+    
+    # If the calendar isn't returned, fallback to checking weeks 1 through 15
+    if cal_resp.status_code == 200 and cal_resp.json():
+        weeks_to_check = [w['week'] for w in cal_resp.json() if datetime.fromisoformat(w['firstGameStart'].replace('Z', '+00:00')) <= datetime.now().astimezone()]
+    else:
+        weeks_to_check = list(range(1, 16))
 
+    if not weeks_to_check:
+        weeks_to_check = [1]
+
+    print(f"Processing Red Zone plays for weeks: {weeks_to_check}")
     records = []
 
-    # 1. RZ Rush Attempts (Exclude sacks, kneels, spikes)
-    rush_plays = rz[
-        (rz['rush'] == 1) & 
-        (~rz['play_type'].str.contains('Sack|Kneel|Fumble|Spike', case=False, na=False))
-    ]
-    for _, row in rush_plays.iterrows():
-        p_id = row.get('rush_player_id') or row.get('athlete_id_1')
-        p_name = row.get('rusher_player_name')
-        if pd.notna(p_name):
-            pos = roster_lookup.get(p_id, {}).get('norm_pos', 'RB')
-            records.append({
-                'season': row['season'],
-                'week': row['week'],
-                'team': row['team_abbr'],
-                'player_id': p_id,
-                'player_name': p_name,
-                'position': pos,
-                'type': 'rush'
-            })
+    for wk in weeks_to_check:
+        print(f"Querying Week {wk} plays...")
+        url = f"{base_url}/plays?year={season}&week={wk}&seasonType=both"
+        resp = requests.get(url, headers=headers)
+        
+        if resp.status_code != 200:
+            print(f"Warning: Week {wk} returned status {resp.status_code}")
+            continue
 
-    # 2. RZ Pass Targets
-    pass_plays = rz[
-        (rz['pass'] == 1) & 
-        (~rz['play_type'].str.contains('Sack|Spike', case=False, na=False))
-    ]
-    for _, row in pass_plays.iterrows():
-        p_id = row.get('receiver_player_id') or row.get('target_player_id')
-        p_name = row.get('receiver_player_name')
-        if pd.notna(p_name):
-            pos = roster_lookup.get(p_id, {}).get('norm_pos', 'WR')
-            records.append({
-                'season': row['season'],
-                'week': row['week'],
-                'team': row['team_abbr'],
-                'player_id': p_id,
-                'player_name': p_name,
-                'position': pos,
-                'type': 'target'
-            })
+        plays = resp.json()
+        if not plays:
+            continue
 
-    df_records = pd.DataFrame(records)
-    if df_records.empty:
-        print("No red zone records found for the current filter.")
+        for p in plays:
+            # Filter for Red Zone (yardline <= 20)
+            # In CFBD: yardLine is distance to goal line
+            yd = p.get('yardLine') or p.get('yardline')
+            if yd is None or yd > 20 or yd <= 0:
+                continue
+
+            offense = resolve_team(p.get('offense'))
+            if not offense:
+                continue
+
+            p_type = p.get('playType', '')
+            p_text = p.get('playText', '')
+
+            # 1. Red Zone Rush Plays
+            if 'Rush' in p_type or 'Run' in p_type:
+                if any(x in p_type for x in ['Sack', 'Kneel', 'Fumble Recovery (Own)']):
+                    continue
+                
+                # CFBD provides rusher name or parsed player tags
+                rusher = p.get('rusher')
+                if not rusher:
+                    m = re.search(r'([A-Z][a-zA-Z\.\'\-]+(?:\s+[A-Z][a-zA-Z\.\'\-]+)+)\s+run', p_text)
+                    if m: rusher = m.group(1)
+
+                if rusher:
+                    records.append({
+                        'week': wk,
+                        'team': offense,
+                        'player_id': '',
+                        'player_name': rusher.strip(),
+                        'position': 'RB',
+                        'type': 'rush'
+                    })
+
+            # 2. Red Zone Pass Targets
+            elif 'Pass' in p_type:
+                if 'Sack' in p_type or 'Spike' in p_type:
+                    continue
+
+                receiver = p.get('receiver') or p.get('target')
+                if not receiver:
+                    m = re.search(r'to\s+([A-Z][a-zA-Z\.\'\-]+(?:\s+[A-Z][a-zA-Z\.\'\-]+)+)', p_text)
+                    if m: receiver = m.group(1)
+
+                if receiver:
+                    records.append({
+                        'week': wk,
+                        'team': offense,
+                        'player_id': '',
+                        'player_name': receiver.strip(),
+                        'position': 'WR',
+                        'type': 'target'
+                    })
+
+        time.sleep(0.2)  # Respect CFBD rate pacing
+
+    df = pd.DataFrame(records)
+    if df.empty:
+        print("No red zone records found. Writing empty schema CSV.")
+        pd.DataFrame(columns=out_cols).to_csv(out_path, index=False)
         return
 
-    # Weekly aggregation
-    agg = df_records.groupby(['week', 'team', 'player_id', 'player_name', 'position', 'type']).size().unstack(fill_value=0).reset_index()
+    # Aggregate by player-week
+    agg = df.groupby(['week', 'team', 'player_id', 'player_name', 'position', 'type']).size().unstack(fill_value=0).reset_index()
     if 'rush' not in agg.columns: agg['rush'] = 0
     if 'target' not in agg.columns: agg['target'] = 0
 
     agg.rename(columns={'rush': 'rz_rush_att', 'target': 'rz_targets'}, inplace=True)
 
-    # Build primary and secondary cascading match keys
-    agg['match_key'] = agg.apply(
-        lambda r: f"{clean_key_text(r['player_name'])}{clean_key_text(r['team'])}{clean_key_text(r['position'])}", axis=1
-    )
-    agg['alt_key'] = agg.apply(
-        lambda r: f"{clean_key_text(r['player_name'])}{clean_key_text(r['team'])}", axis=1
-    )
+    # Primary & Secondary Keys
+    agg['match_key'] = agg.apply(lambda r: f"{clean_key(r['player_name'])}{clean_key(r['team'])}{clean_key(r['position'])}", axis=1)
+    agg['alt_key'] = agg.apply(lambda r: f"{clean_key(r['player_name'])}{clean_key(r['team'])}", axis=1)
 
-    output_cols = [
-        'week', 'team', 'player_id', 'player_name', 'position', 
-        'rz_rush_att', 'rz_targets', 'match_key', 'alt_key'
-    ]
-    agg = agg[output_cols].sort_values(by=['week', 'team', 'rz_rush_att'], ascending=[True, True, False])
-
-    os.makedirs('data', exist_ok=True)
-    out_path = 'data/redzone_weekly.csv'
+    agg = agg[out_cols].sort_values(by=['week', 'team', 'rz_rush_att'], ascending=[True, True, False])
     agg.to_csv(out_path, index=False)
-    print(f"Successfully exported {len(agg)} player-week records to {out_path}")
+    print(f"SUCCESS: Exported {len(agg)} red zone records to {out_path}")
 
 if __name__ == '__main__':
     main()
