@@ -1,0 +1,19 @@
+week,team,player_id,player_name,position,rz_rush_att,rz_targets,match_key,alt_key
+1,Bama,,Austin Mack,RB,1,0,austinmackbamarb,austinmackbama
+1,Bama,,EJ Crowell,RB,1,0,ejcrowellbamarb,ejcrowellbama
+1,Bama,,Khalifa Keith,RB,1,0,khalifakeithbamarb,khalifakeithbama
+1,Bama,,Trae'shawn Brown,RB,1,0,traeshawnbrownbamarb,traeshawnbrownbama
+1,Bama,,Danny Lewis,WR,0,1,dannylewisbamawr,dannylewisbama
+1,Bama,,Rico Scott,WR,0,1,ricoscottbamawr,ricoscottbama
+1,Bama,,Ryan Coleman-Williams,WR,0,2,ryancolemanwilliamsbamawr,ryancolemanwilliamsbama
+1,ECU,,Michael Allen,RB,2,0,michaelallenecurb,michaelallenecu
+1,ECU,,Jeremiah Melvin,WR,0,1,jeremiahmelvinecuwr,jeremiahmelvinecu
+1,FlaSt,,Ousmane Kromah,RB,4,0,ousmanekromahflastrb,ousmanekromahflast
+1,Hawaii,,S. Mikaele,RB,1,0,smikaelehawaiirb,smikaelehawaii
+1,SMU,,Kendrick Raphael,RB,5,0,kendrickraphaelsmurb,kendrickraphaelsmu
+1,SMU,,Dramekco Green,RB,2,0,dramekcogreensmurb,dramekcogreensmu
+1,SMU,,Kevin Jennings,RB,1,0,kevinjenningssmurb,kevinjenningssmu
+1,SMU,,Kendrick Raphael,WR,0,1,kendrickraphaelsmuwr,kendrickraphaelsmu
+1,SMU,,Randy Pittman Jr.,WR,0,1,randypittmansmuwr,randypittmansmu
+2,SoFL,,M. Van Buren Jr.,RB,1,0,mvanburensoflrb,mvanburensofl
+2,UTSA,,B. Young Jr.,WR,0,1,byoungutsawr,byoungutsa
