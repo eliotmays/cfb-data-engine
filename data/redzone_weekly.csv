@@ -72,8 +72,8 @@ week,team,player_id,player_name,position,rz_rush_att,rz_targets,match_key,alt_ke
 1,GASt,5233868,Lanear McCrary Jr.,RB,1,0,lanearmccrarygastrb,lanearmccrarygast
 1,GATec,4870760,Justice Haynes,RB,2,0,justicehaynesgatecrb,justicehaynesgatec
 1,GaSo,5155780,Taeo Todd,RB,3,0,taeotoddgasorb,taeotoddgaso
-1,GaSo,4912238,Turner Helton,QB,2,0,turnerheltongasoqb,turnerheltongaso
 1,GaSo,,No Huddle-Shotgun Ga. Southern,RB,1,0,nohuddleshotgungasoutherngasorb,nohuddleshotgungasoutherngaso
+1,GaSo,4912238,Turner Helton,QB,1,0,turnerheltongasoqb,turnerheltongaso
 1,GaSo,5151111,Jamarian Samuel,RB,1,0,jamariansamuelgasorb,jamariansamuelgaso
 1,GaSo,5291806,Ty Cummings,RB,1,0,tycummingsgasorb,tycummingsgaso
 1,Hawaii,5079651,DeVon Rice,RB,4,0,devonricehawaiirb,devonricehawaii
@@ -236,7 +236,7 @@ week,team,player_id,player_name,position,rz_rush_att,rz_targets,match_key,alt_ke
 1,UConn,5075952,Trey Cornist,RB,1,0,treycornistuconnrb,treycornistuconn
 1,UConn,5079619,Kalieb Osborne,QB,1,0,kaliebosborneuconnqb,kaliebosborneuconn
 1,UConn,5203601,Shawn Simeon,RB,1,0,shawnsimeonuconnrb,shawnsimeonuconn
-1,UD,5086952,Jo Silver,RB,2,0,josilverudrb,josilverud
+1,UD,5086952,Jo Silver,RB,1,0,josilverudrb,josilverud
 1,UD,5153846,Nick Minicucci,QB,1,0,nickminicucciudqb,nickminicucciud
 1,UD,5224766,Greg Spiller,RB,1,0,gregspillerudrb,gregspillerud
 1,UGA,5079335,Chauncey Bowens,RB,1,0,chaunceybowensugarb,chaunceybowensuga
