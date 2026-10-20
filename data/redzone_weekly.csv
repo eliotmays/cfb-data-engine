@@ -28,7 +28,7 @@ week,team,player_id,player_name,position,rz_rush_att,rz_targets,match_key,alt_ke
 1,Bama,5264688,EJ Crowell,RB,1,0,ejcrowellbamarb,ejcrowellbama
 1,Bama,5327659,Trae'shawn Brown,RB,1,0,traeshawnbrownbamarb,traeshawnbrownbama
 1,Bama,5141711,Ryan Coleman-Williams,WR,0,2,ryancolemanwilliamsbamawr,ryancolemanwilliamsbama
-1,Bama,4888707,Danny Lewis,TE,0,1,dannylewisbamate,dannylewisbama
+1,Bama,4888707,Danny Lewis Jr.,TE,0,1,dannylewisbamate,dannylewisbama
 1,Bama,5079714,Rico Scott,WR,0,1,ricoscottbamawr,ricoscottbama
 1,Bayl,4921517,Dawson Pendergrass,RB,4,0,dawsonpendergrassbaylrb,dawsonpendergrassbayl
 1,Bayl,5295723,Caden Knighten,RB,2,0,cadenknightenbaylrb,cadenknightenbayl
@@ -121,7 +121,7 @@ week,team,player_id,player_name,position,rz_rush_att,rz_targets,match_key,alt_ke
 1,Mich,5159046,Savion Hiter,RB,4,0,savionhitermichrb,savionhitermich
 1,Mich,5141741,Bryce Underwood,QB,1,0,bryceunderwoodmichqb,bryceunderwoodmich
 1,MidTN,4685436,Antonio Martin,RB,2,0,antoniomartinmidtnrb,antoniomartinmidtn
-1,MidTN,5383050,Terrence Brown,RB,1,0,terrencebrownmidtnrb,terrencebrownmidtn
+1,MidTN,5306988,Terrence Brown,RB,1,0,terrencebrownmidtnrb,terrencebrownmidtn
 1,MissSt,5146781,Xavier Gayten,RB,1,0,xaviergaytenmissstrb,xaviergaytenmissst
 1,MissSt,5177084,Kamario Taylor,QB,1,0,kamariotaylormissstqb,kamariotaylormissst
 1,MissSt,5209427,Kolin Wilson,RB,1,0,kolinwilsonmissstrb,kolinwilsonmissst
@@ -185,7 +185,7 @@ week,team,player_id,player_name,position,rz_rush_att,rz_targets,match_key,alt_ke
 1,SMU,4899368,Kendrick Raphael,RB,5,1,kendrickraphaelsmurb,kendrickraphaelsmu
 1,SMU,5207927,Dramekco Green,RB,2,0,dramekcogreensmurb,dramekcogreensmu
 1,SMU,5084084,Kevin Jennings,QB,1,0,kevinjenningssmuqb,kevinjenningssmu
-1,SMU,4870954,Randy Pittman,TE,0,1,randypittmansmute,randypittmansmu
+1,SMU,4870954,Randy Pittman Jr.,TE,0,1,randypittmansmute,randypittmansmu
 1,SMiss,5394596,Steven Robinson,RB,3,0,stevenrobinsonsmissrb,stevenrobinsonsmiss
 1,SMiss,5296029,Robert Henderson,RB,1,0,roberthendersonsmissrb,roberthendersonsmiss
 1,SacSt,5084459,Cincere Rhaney,RB,4,0,cincererhaneysacstrb,cincererhaneysacst
@@ -277,7 +277,7 @@ week,team,player_id,player_name,position,rz_rush_att,rz_targets,match_key,alt_ke
 1,WVU,4918103,Cam Cook,RB,3,0,camcookwvurb,camcookwvu
 1,WVU,5141484,Maliek Hawkins,DB,3,0,maliekhawkinswvudb,maliekhawkinswvu
 1,WVU,5082584,DJ Epps,WR,1,0,djeppswvuwr,djeppswvu
-1,WVU,5384823,Armoni Weaver-Bomar,WR,1,0,armoniweaverbomarwvuwr,armoniweaverbomarwvu
+1,WVU,5141754,Armoni Weaver-Bomar,WR,1,0,armoniweaverbomarwvuwr,armoniweaverbomarwvu
 1,WaSt,5226019,Caden Pinnick,QB,2,0,cadenpinnickwastqb,cadenpinnickwast
 1,Wake,5216505,Jamar Searcy,RB,1,0,jamarsearcywakerb,jamarsearcywake
 1,Wake,5382529,Deuce Lawrence,RB,1,0,deucelawrencewakerb,deucelawrencewake
@@ -504,7 +504,7 @@ week,team,player_id,player_name,position,rz_rush_att,rz_targets,match_key,alt_ke
 2,TxAM,5158975,KJ Edwards,RB,1,0,kjedwardstxamrb,kjedwardstxam
 2,TxSt,5088888,Torrance Burgess Jr.,RB,3,0,torranceburgesstxstrb,torranceburgesstxst
 2,TxTch,5193580,Cameron Dickey,RB,3,0,camerondickeytxtchrb,camerondickeytxtch
-2,TxTch,4773919,Tommy Castellanos,QB,2,0,tommycastellanostxtchqb,tommycastellanostxtch
+2,TxTch,4773919,Thomas Castellanos,QB,2,0,thomascastellanostxtchqb,thomascastellanostxtch
 2,TxTch,5086393,J'Koby Williams,RB,1,0,jkobywilliamstxtchrb,jkobywilliamstxtch
 2,TxTch,5126468,Will Hammond,QB,1,0,willhammondtxtchqb,willhammondtxtch
 2,UAB,5393806,Rashad Robinson,RB,1,0,rashadrobinsonuabrb,rashadrobinsonuab
@@ -563,9 +563,9 @@ week,team,player_id,player_name,position,rz_rush_att,rz_targets,match_key,alt_ke
 2,Wash,4601283,Trey Cooley,RB,2,0,treycooleywashrb,treycooleywash
 2,Wash,5200430,Brian Bonner Jr.,RB,2,0,brianbonnerwashrb,brianbonnerwash
 2,Wash,5079653,Demond Williams Jr.,QB,1,0,demondwilliamswashqb,demondwilliamswash
+2,WestMI,,O.Mataele,RB,1,0,omataelewestmirb,omataelewestmi
 2,WestMI,4917858,Cole Cabana,RB,1,0,colecabanawestmirb,colecabanawestmi
 2,WestMI,5126475,Trey Petty,QB,1,0,treypettywestmiqb,treypettywestmi
 2,WestMI,5282469,Harper Hughes,WR,1,0,harperhugheswestmiwr,harperhugheswestmi
-2,WestMI,5296166,Ofa Mataele,RB,1,0,ofamataelewestmirb,ofamataelewestmi
 2,Wyo,4838536,Tyler Hughes,QB,1,0,tylerhugheswyoqb,tylerhugheswyo
 2,Wyo,5227257,Markell Holman,RB,1,0,markellholmanwyorb,markellholmanwyo
