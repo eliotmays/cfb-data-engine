@@ -120,7 +120,7 @@ week,team,player_id,player_name,position,rz_rush_att,rz_targets,match_key,alt_ke
 1,Mich,5079574,Jordan Marshall,RB,4,0,jordanmarshallmichrb,jordanmarshallmich
 1,Mich,5159046,Savion Hiter,RB,4,0,savionhitermichrb,savionhitermich
 1,Mich,5141741,Bryce Underwood,QB,1,0,bryceunderwoodmichqb,bryceunderwoodmich
-1,MidTN,4685436,Antonio Martin,RB,2,0,antoniomartinmidtnrb,antoniomartinmidtn
+1,MidTN,4685436,Antonio Martin Jr.,RB,2,0,antoniomartinmidtnrb,antoniomartinmidtn
 1,MidTN,5306988,Terrence Brown,RB,1,0,terrencebrownmidtnrb,terrencebrownmidtn
 1,MissSt,5146781,Xavier Gayten,RB,1,0,xaviergaytenmissstrb,xaviergaytenmissst
 1,MissSt,5177084,Kamario Taylor,QB,1,0,kamariotaylormissstqb,kamariotaylormissst
@@ -138,7 +138,7 @@ week,team,player_id,player_name,position,rz_rush_att,rz_targets,match_key,alt_ke
 1,NDSU,5154224,DJ Scott,RB,1,0,djscottndsurb,djscottndsu
 1,NDSU,5297931,Myles Mitchell,RB,1,0,mylesmitchellndsurb,mylesmitchellndsu
 1,NEV,5265178,Dominic Kelley,RB,3,0,dominickelleynevrb,dominickelleynev
-1,NEV,5220671,Herschel Turner,RB,1,0,herschelturnernevrb,herschelturnernev
+1,NEV,5220671,Herschel Turner Jr.,RB,1,0,herschelturnernevrb,herschelturnernev
 1,NM,5166161,Scottre Humphrey,RB,2,0,scottrehumphreynmrb,scottrehumphreynm
 1,NMS,4922995,Dijon Stanley,RB,2,0,dijonstanleynmsrb,dijonstanleynms
 1,NMS,5159150,Isaiah Rudison,RB,1,0,isaiahrudisonnmsrb,isaiahrudisonnms
@@ -433,7 +433,7 @@ week,team,player_id,player_name,position,rz_rush_att,rz_targets,match_key,alt_ke
 2,NDSU,5297931,Myles Mitchell,RB,2,0,mylesmitchellndsurb,mylesmitchellndsu
 2,NDSU,5154224,DJ Scott,RB,1,0,djscottndsurb,djscottndsu
 2,NEV,4819250,AJ Bianco,QB,1,0,ajbianconevqb,ajbianconev
-2,NEV,5220671,Herschel Turner,RB,1,0,herschelturnernevrb,herschelturnernev
+2,NEV,5220671,Herschel Turner Jr.,RB,1,0,herschelturnernevrb,herschelturnernev
 2,NEV,5265178,Dominic Kelley,RB,1,0,dominickelleynevrb,dominickelleynev
 2,NM,5146726,Kiefer Sibley,RB,1,0,kiefersibleynmrb,kiefersibleynm
 2,NMS,5220253,James Jones,RB,2,0,jamesjonesnmsrb,jamesjonesnms
